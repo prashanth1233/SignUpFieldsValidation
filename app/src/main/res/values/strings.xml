@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">FieldsValidation</string>
+
+    <!--signup fields names-->
+
+    <string name="signupRL">SignUpHeader </string>
+    <string name="signup_header_text">signUpHeaderText </string>
+    <string name="signup_userNameLL">signUpuserNameLayout</string>
+    <string name="signup_userNameET">signUpUserNameET</string>
+    <string name="signup_passwordLL">signUpPasswordLayout </string>
+    <string name="signup_passwordET">signUpPasswordET</string>
+    <string name="signup_reEnterPwdLL">signUpUserReEnterPasswordLayout</string>
+    <string name="signup_reEnterPwdET">signUpReEneterEt</string>
+    <string name="signup_mobileNumbLL">signUpMobileNumberLayout</string>
+    <string name="signup_mobileNumberET">signUpMobileNumberEt</string>
+    <string name="signup_emailAddLL">signUpEmailAddressLayout</string>
+    <string name="signup_emailAddET">signUpEmailAddressET</string>
+    <string name="signup_button">singUPButton</string>
+    <string name="signup_pageLink">signInPageLink</string>
+
+</resources>

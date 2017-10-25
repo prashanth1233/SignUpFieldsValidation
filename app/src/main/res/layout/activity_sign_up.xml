@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bgColor">
+
+    <RelativeLayout
+        android:id="@+id/SignUpHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/sign_in_header_color">
+
+        <TextView
+            android:id="@+id/signUpHeaderText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+          android:gravity="center"
+            android:text="Sign Up"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="120dp">
+
+        <LinearLayout
+            android:id="@+id/signUpuserNameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/signUpUserNameET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter UserName"
+                android:maxLines="1"
+                android:inputType="textPersonName"
+                android:imeOptions="actionNext"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/signUpPasswordLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signUpuserNameLayout"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/:signUpPasswordET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Password"
+                android:maxLines="1"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/signUpuserReenterPasswordLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signUpPasswordLayout"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/:signUpReenterPasswordET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Reenter Password"
+                android:maxLines="1"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mobileNumberLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signUpuserReenterPasswordLayout"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/:mobileNumberET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="0123456789"
+                android:hint="Enter Mobile Number"
+                android:maxLines="1"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="10" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/emailAddressLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mobileNumberLayout"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/emailAddressET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Email"
+                android:maxLines="1"
+                android:inputType="textEmailAddress"
+                android:imeOptions="actionDone"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/SignUpButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emailAddressLayout"
+            android:text="Sign Up"/>
+
+        <TextView
+            android:id="@+id/signInPageLink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SignUpButton"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="Already a member? SignIn"
+            android:textSize="20dp" />
+    </RelativeLayout>
+</RelativeLayout>
